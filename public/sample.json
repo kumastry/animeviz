@@ -1,0 +1,77 @@
+[
+   {"title":"僕のヒーローアカデミア(第5期)",
+    "follower":[
+    {"date":202104,"number":619952},{"date":202105,"number":648593},
+    {"date":202106,"number":665562},{"date":202107,"number":682544},
+    {"date":202108,"number":707473},{"date":202109,"number":735612},
+    {"date":202110,"number":762453}]
+   },
+   {"title":"チョコ松さん〜ホワイトデー編〜",
+    "follower":[
+    {"date":202104,"number":588736},{"date":202105,"number":586084},
+    {"date":202106,"number":584743},{"date":202107,"number":583464},
+    {"date":202108,"number":585525},{"date":202109,"number":585220},
+    {"date":202110,"number":583696}]
+   },
+   {"title":"パワフルプロ野球 パワフル高校編",
+      "follower":[
+      {"date":202104,"number":459175},{"date":202105,"number":454836},
+      {"date":202106,"number":453448},{"date":202107,"number":452542},
+      {"date":202108,"number":450484},{"date":202109,"number":467140},
+      {"date":202110,"number":476297}]
+   },
+   {"title":"美少年探偵団",
+      "follower":[
+      {"date":202104,"number":420136},{"date":202105,"number":430352},
+      {"date":202106,"number":432078},{"date":202107,"number":435471},
+      {"date":202108,"number":434540},{"date":202109,"number":433940},
+      {"date":202110,"number":432744}]
+   },
+   {"title":"東京リベンジャーズ",
+      "follower":[
+      {"date":202104,"number":63483},{"date":202105,"number":103831},
+      {"date":202106,"number":147359},{"date":202107,"number":193978},
+      {"date":202108,"number":259974},{"date":202109,"number":308971},
+      {"date":202110,"number":355581}]
+   },
+
+   {"title":"どるふろ -癒し編2-",
+      "follower":[
+      {"date":202104,"number":309393},{"date":202105,"number":307307},
+      {"date":202106,"number":306081},{"date":202107,"number":304633},
+      {"date":202108,"number":303998},{"date":202109,"number":303615},
+      {"date":202110,"number":303157}]
+   },
+
+   {"title":"しかるねこ",
+      "follower":[
+      {"date":202104,"number":247146},{"date":202105,"number":247805},
+      {"date":202106,"number":247132},{"date":202107,"number":246847},
+      {"date":202108,"number":247495},{"date":202109,"number":247115},
+      {"date":202110,"number":248726}]
+   },
+
+   {"title":"転生したらスライムだった件 転スラ日記",
+      "follower":[
+      {"date":202104,"number":196420},{"date":202105,"number":202404},
+      {"date":202106,"number":208739},{"date":202107,"number":215741},
+      {"date":202108,"number":221647},{"date":202109,"number":226823},
+      {"date":202110,"number":248445}]
+   },
+
+   {"title":"ゾンビランドサガ リベンジ",
+      "follower":[
+      {"date":202104,"number":139121},{"date":202105,"number":150782},
+      {"date":202106,"number":156106},{"date":202107,"number":164347},
+      {"date":202108,"number":166009},{"date":202109,"number":166120},
+      {"date":202110,"number":166699}]
+   },
+
+   {"title":"フルーツバスケット The Final",
+      "follower":[
+      {"date":202104,"number":132466},{"date":202105,"number":140916},
+      {"date":202106,"number":144566},{"date":202107,"number":156759},
+      {"date":202108,"number":163188},{"date":202109,"number":161657},
+      {"date":202110,"number":160050}]
+   }
+]
