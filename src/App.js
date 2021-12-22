@@ -31,7 +31,7 @@ function App() {
       d.map((item) => {
         const tmp = [];
         for(let idx = 0; idx < item['follower'].length-1;idx++) {
-          tmp.push(1.0*item['follower'][idx+1]['number'] / item['follower'][idx]['number']);
+          tmp.push(1.0*item['follower'][idx+1]['number'] - item['follower'][idx]['number']);
         }
 
         tmpHeat.push(tmp);
@@ -57,8 +57,8 @@ function App() {
   //const color = d3.scaleLinear().range(['white', 'red']).domain([Math.min(...heatData), Math.max(...heatData)])
   const svgWidth = margin.left + margin.right + contentWidth;
   const svgHeight = margin.top + margin.bottom + contentHeight;
-  const scale = d3.scaleBand().range([0, contentWidth]).domain(d3.range(heatData.length));
-  let idx = 0;
+  const scale = d3.scaleBand().range([0, contentWidth/ 1.5]).domain(d3.range(heatData.length));
+  //let idx = 0;
     return (
       <div>
         <svg
@@ -75,13 +75,21 @@ function App() {
                 //console.log(scale(j))
                 //console.log(idx++);
                 return(
+                  <g>
+                    <text 
+                    x = {scale(0) - margin.left + 10 }
+                    y = {50*i + 20}
+                    font-size="10"
+                    >{data[i]['title']}</text>
+
                 <rect 
-                  x = {scale(j)}
+                  x = {scale(j) + 150}
                   y = {50*i}
                   width={scale.bandwidth()}
                   height={scale.bandwidth()}
                   fill={color[i](item)}
                 />
+                </g>
                 
                 );
               }) 
