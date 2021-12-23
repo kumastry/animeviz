@@ -21,11 +21,7 @@ function App() {
       const d = await request.json();
       setData(d);
 
-      let t = [];
-      console.log(d[0]['follower'].length);
-      for(let i = 0; i < d[0]['follower'].length-1; i++) {
-        t.push(1.0*d[0]['follower'][i+1]['number'] / d[0]['follower'][i]['number']);
-      }
+  
 
       const tmpHeat = [];
       d.map((item) => {
@@ -39,7 +35,7 @@ function App() {
 
       console.log(tmpHeat);
     
-      console.log(t);
+      
       setHeatData(tmpHeat);
     })();
   }, []);
@@ -50,7 +46,10 @@ function App() {
   
   const color = []
   heatData.map((item) => {
-    color.push(d3.scaleSequential(d3.interpolateReds).domain([Math.min(...item), Math.max(...item)]));
+    color.push(d3.scaleLinear()
+    .domain([Math.min(...item), 0 ,Math.max(...item)])
+    .range(["blue", "white", "red"])
+    );
   });
 
   console.log(color)
@@ -65,9 +64,18 @@ function App() {
         viewBox={`${-margin.left} ${-margin.top} ${svgWidth} ${svgHeight}`}
         style={{ border: "solid 1px" }}
       >
+
+        <g>
+          <text x = {156} y = {0} fontSize={10}>5月</text>
+          <text x = {185} y = {0} fontSize={10}>6月</text>
+          <text x = {210} y = {0} fontSize={10}>7月</text>
+          <text x = {235} y = {0} fontSize={10}>8月</text>
+          <text x = {260} y = {0} fontSize={10}>9月</text>
+          <text x = {285} y = {0} fontSize={10}>10月</text>
+        </g>
           <g>
             {heatData.map((array, i)=> {
-              //console.log(array)
+              console.log(array)
               //console.log(color)
               return(
               array.map((item, j) => {
@@ -78,13 +86,13 @@ function App() {
                   <g>
                     <text 
                     x = {scale(0) - margin.left + 10 }
-                    y = {50*i + 20}
+                    y = {50*i + 30}
                     font-size="10"
                     >{data[i]['title']}</text>
 
                 <rect 
                   x = {scale(j) + 150}
-                  y = {50*i}
+                  y = {50*i + 10}
                   width={scale.bandwidth()}
                   height={scale.bandwidth()}
                   fill={color[i](item)}
